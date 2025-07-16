@@ -15,7 +15,7 @@ const routes: Array<RouteRecordRaw> = [
   }
 ]
 
-const base = import.meta.env.MODE === 'production' ? 'roadsurfer' : '/'
+const base = import.meta.env.MODE === 'production' ? 'Calendar-Dashboard' : '/'
 export default createRouter({
   history: createWebHistory(base),
   routes
