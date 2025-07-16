@@ -8,13 +8,13 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Calendar-Dashboard/',
   plugins: [ 
      tailwindcss(),
     vue(),
     vueJsx(),
     vueDevTools(),
   ],
+  base: '/Calendar-Dashboard/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

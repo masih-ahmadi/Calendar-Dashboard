@@ -1,9 +1,10 @@
-import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
-import Dashboard from '@/views/Dashboard.vue'
-import BookingDetail from '@/components/BookingDetail.vue'
+import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '../views/HomeView.vue'
 
-const routes: Array<RouteRecordRaw> = [
-  { 
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+ { 
     path: '/',
     name: 'Dashboard', 
     component: Dashboard 
@@ -12,11 +13,8 @@ const routes: Array<RouteRecordRaw> = [
     path: '/booking/:stationId/:bookingId',
     name: 'BookingDetail', 
     component: BookingDetail 
-  } 
-]
-
-const base = 'Calendar-Dashboard'
-export default createRouter({
-  history: createWebHistory(base),
-  routes
+  },
+  ],
 })
+
+export default router
