@@ -1,20 +1,30 @@
-# vue-project
+## Calendar Dashboard 
+## 📜 Introduction
 
-This template should help get you started developing with Vue 3 in Vite.
+Welcome to the **Calendar Dashboard** project! This application is a coding challenge that involves managing a fleet of campervans and rental stations.
 
-## Recommended IDE Setup
+## ⚙️ Technology Stack
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+This project is built with modern web technologies:
 
-## Type Support for `.vue` Imports in TS
+- **Framework**: Vue 3 
+- **Build Tool**: Vite
+- **Language**: TypeScript
+- **Testing**: Vitest for unit testing
+- **Styling**: TailwindCSS 
+- **Hosting**: GitHub Pages
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## 🌐 Live Demo
 
-## Customize configuration
+**🔗 [View Live Application](https://masih-ahmadi.github.io/Calendar-Dashboard/)**
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### Installation
 
-## Project Setup
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/masih-ahmadi/Calendar-Dashboard.git
+   cd Calendar-Dashboard
+2. **Install dependencies:**
 
 ```sh
 npm install
