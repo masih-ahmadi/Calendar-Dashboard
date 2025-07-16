@@ -12,10 +12,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/booking/:stationId/:bookingId',
     name: 'BookingDetail', 
     component: BookingDetail 
-  }
+  } 
 ]
 
-const base = import.meta.env.MODE === 'production' ? 'Calendar-Dashboard' : '/'
+const base = 'Calendar-Dashboard'
 export default createRouter({
   history: createWebHistory(base),
   routes
