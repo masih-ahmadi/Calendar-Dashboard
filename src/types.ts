@@ -1,13 +1,13 @@
 export interface Station {
-  id: number
+  id: string
   name: string
 }
 
 export interface Booking {
-  id: number
+  id: string
   customerName: string
   startDate: string
   endDate: string
   stationName?: string
-  pickupReturnStationId: number
+  pickupReturnStationId: string
 }
