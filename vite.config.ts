@@ -14,7 +14,7 @@ export default defineConfig({
     vueJsx(),
     vueDevTools(),
   ],
-  base: '/Calendar-Dashboard/',
+  base: process.env.NODE_ENV === 'production' ? '/Calendar-Dashboard/' : '/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
