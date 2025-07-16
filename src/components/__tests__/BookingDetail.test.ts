@@ -64,11 +64,13 @@ describe('BookingDetail.vue', () => {
   })
 
   it('renders booking details when available', async () => {
-    store.bookingDetails = {
+  store.bookingDetails = {
+      id: '1',
       startDate: '2024-07-01',
       endDate: '2024-07-05',
       customerName: 'Alice Smith',
       stationName: 'Main Station',
+      pickupReturnStationId: '1'
     }
 
     const wrapper = await mountComponent()
